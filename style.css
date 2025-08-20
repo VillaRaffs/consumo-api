@@ -3,3 +3,48 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background: aquamarine;
+    margin: 0;
+    background-image: url('./lalala.webp' );
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    color: pink;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 8px black;
+    font-size: 4rem;
+}
+
+.search-box{
+    margin-bottom: 20px;
+}
+
+#pageInput{
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+    border: 1px solid white;
+    box-shadow: 0 2px 8px black;
+}
+
+#searchBtn{
+    padding: 10px 15px;
+    margin-left: 5px;
+    border: none;
+    background-color: aquamarine;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#searchBtn:hover{
+ background-color: pink;
+ box-shadow: 0 2px black;
+}
