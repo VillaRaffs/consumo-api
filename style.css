@@ -38,13 +38,68 @@ h1{
     padding: 10px 15px;
     margin-left: 5px;
     border: none;
-    background-color: aquamarine;
+    background-color: pink;
     color: white;
     cursor: pointer;
     transition: 0.3s;
 }
 
 #searchBtn:hover{
- background-color: pink;
- box-shadow: 0 2px black;
+ background-color: aquamarine;
+ box-shadow: 0 2px 8px black;
+}
+
+.results{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card{
+    background: #000000;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    color: white;
+    transition: all 200ms ease-in-out;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 100%;
+    transition: all 200ms ease-in-out;
+}
+
+.card:hover{
+    box-shadow: rgba(46, 240, 233, 0.4) -5px 5px, rgba(46, 240, 233, 0.3) -10px 10px, rgba(46, 230, 240, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.card:hover h3{
+    color: aquamarine;
+    text-shadow: 0 2px 8px aquamarine;
+}
+
+.card:hover img{
+    border-radius: 10px;
+}
+
+.card h3{
+    margin: 10px 0 5px;
+    font-size: 22px;
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+.card p{
+    font-size: 14px;
+    color: gray;
+}
+
+.card strong{
+    color: aquamarine;
+    font-weight: bold;
 }
